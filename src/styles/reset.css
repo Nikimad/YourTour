@@ -13,7 +13,9 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul {
+  padding: 0;
   margin: 0;
 }
 
