@@ -1,0 +1,89 @@
+.form {
+    display: grid;
+    gap: 1.875em;
+    background-color: var(--white);
+    padding: 1.25em;
+    padding-bottom: 2.5em;
+    margin: 0;
+    border-radius: 30px;
+}
+
+.form__textarea {
+    resize: none;
+    height: 8.25em;
+}
+
+.form__span {
+    cursor: pointer;
+}
+
+.form__fieldset {
+    border: none;
+    display: flex;
+    column-gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.form__fieldset__legend {
+    margin-bottom: 8px;
+}
+
+.form__button {
+    width: 134px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form__button-submit {
+    color: var(--white);
+    background-color: var(--green-400);
+}
+
+.form__button-reset {
+    color: var(--green-400);
+    background-color: var(--green-100);
+}
+
+.form__button-submit:hover,
+.form__button-submit:focus {
+    background-color: var(--green-300);
+}
+  
+.form__button-submit:active {
+    background-color: var(--green-200);
+}
+
+.form__button-reset:hover,
+.form__button-reset:focus {
+    background-color: var(--gray-100);
+}
+  
+.form__button-reset:active {
+    background-color: var(--gray-200);
+}
+
+
+@media screen and (min-width: 768px) {
+    .form {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        row-gap: 1.65em;
+        padding: 3em;
+        border-radius: 50px;
+    }
+
+    .form__textarea {
+        height: 9.5rem;
+    }
+
+    .form__field_fullwidth {
+        grid-column: 1 / span 2;
+    }
+
+    .form__button {
+        width: 235px;
+        padding: 15px;
+    }
+}
