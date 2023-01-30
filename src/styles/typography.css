@@ -28,6 +28,19 @@
     letter-spacing: 0.04em;
 }
 
+.fs_small {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+}
+
+.fs_big {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+
 @media screen and (min-width: 768px) {
     .h1 {
         font-size: 96px;
@@ -39,5 +52,16 @@
         font-weight: 500;
         line-height: 43px;
         letter-spacing: 0em;
+    }
+
+    .fs_small {
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+    }
+    
+    .fs_big {
+        font-size: 23px;
+        line-height: 28px;
     }
 }
