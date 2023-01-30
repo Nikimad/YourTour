@@ -15,5 +15,6 @@
     --fw-reg: 400;
     --fw-med: 500;
     --fw-bold: 700;
-    --ff: "Roboto"
+    --ff: "Roboto";
+    --grad: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
 }
