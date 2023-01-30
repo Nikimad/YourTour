@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+    text-align: center;
+    color: var(--white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/src/assets/images/bg.jpg');
+    padding-block: 10.4em 6em;
+}
+
+.header__link {
+    color: var(--black);
+    background-color: var(--white);
+    padding: 5px 20px;
+}
+
+.header__link:hover {
+    color: var(--white);
+    background-color: var(--orange-200);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        gap: 50px;
+        padding-block: 8.75em 3.25em;
+    }
+}
