@@ -1,0 +1,42 @@
+.radio {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.radio__span {
+    cursor: pointer;
+}
+
+
+.radio__box {
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px var(--black);
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .radio__box {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.radio__input:checked + .radio__box {
+    background-image: url('/src/assets/svg/radio.svg');
+    background-size: 60%;
+}
+
+.radio__input:hover + .radio__box {
+    background-color: var(--beige-200);
+}
+
+.radio__input:focus + .radio__box {
+    box-shadow: 0 0 0 3px var(--black);
+}
