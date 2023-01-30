@@ -1,0 +1,30 @@
+@font-face {
+    font-family: var(--ff);
+    font-weight: var(--fw-reg);
+    src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: var(--ff);
+    font-weight: var(--fw-med);
+    src: url('/src/assets/fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: var(--ff);
+    font-weight: var(--fw-bold);
+    src: url('/src/assets/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+.h1 {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 650px) {
+    .h1 {
+        font-size: 96px;
+        line-height: 105px;
+    }
+}
