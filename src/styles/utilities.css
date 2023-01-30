@@ -1,0 +1,7 @@
+.color_gray_300 {
+    color: var(--gray-300);
+}
+
+.br_10 {
+    border-radius: 10px;
+}
