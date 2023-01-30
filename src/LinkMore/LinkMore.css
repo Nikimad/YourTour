@@ -1,0 +1,42 @@
+.link-more {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.link-more::after {
+    box-sizing: unset;
+    position: absolute;
+    top: -7px;
+    left: -20px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 50px;
+    padding: 7px 20px;
+}
+
+.link-more:hover::after,
+.link-more:focus::after {
+    background-color: var(--green-400);
+}
+
+.link-more:active::after  {
+     background-color: var(--orange-200)
+}
+
+
+.link-more-container:hover .link-more::after,
+.link-more-container:focus .link-more::after {
+    background-color: var(--green-400);
+}
+
+.link-more-container .link-more:active::after  {
+    background-color: var(--orange-200);
+}
