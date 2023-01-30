@@ -1,4 +1,4 @@
-import './Cover.scss';
+import './Cover.css';
 
 const Cover = ({src}) => {
     return (
