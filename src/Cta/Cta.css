@@ -1,0 +1,33 @@
+.cta {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+.cta__body {
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.cta__img {
+    height: 133px;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .cta {
+        grid-template-columns: auto auto;
+    }
+
+    .cta__img {
+        height: 370px;
+        border-radius: 50px;
+    }
+
+    .cta__body {
+        text-align: left;
+    }
+}
