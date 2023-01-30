@@ -1,0 +1,37 @@
+.review {
+    display: grid;
+    align-content: space-between;
+    gap: 56px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.review__body > :not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.review__footer {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto autos;
+    grid-template-rows: auto auto;
+    gap: 8px;
+}
+
+.review__avatar {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .review {
+        gap: 70px;
+        padding: 40px;
+    }
+
+    .review__body > :not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
