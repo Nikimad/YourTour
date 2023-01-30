@@ -8,6 +8,7 @@
     line-height: 23px;
     font-family: var(--ff), sans-serif;
     letter-spacing: 0em;
+    background-color: var(--beige-100);
 }
 
 .link {
