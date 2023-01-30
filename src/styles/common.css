@@ -1,6 +1,7 @@
 @import './reset.css';
 @import './variables.css';
 @import './typography.css';
+@import './utilities.css';
 
 .body {
     font-size: 16px;
