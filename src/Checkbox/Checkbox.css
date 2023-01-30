@@ -1,0 +1,38 @@
+.check {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+}
+
+.check__box {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px var(--black);
+    min-width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .check__box {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.check__input:checked + .check__box {
+    background-image: url('../assets/svg/check.svg');
+    background-size: 75%;
+}
+
+.check__input:hover + .check__box {
+    background-color: var(--beige-200);
+}
+
+.check__input:focus  + .check__box {
+    box-shadow: 0 0 0 3px var(--black);
+}
