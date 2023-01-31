@@ -1,6 +1,7 @@
 import "./Story.css";
 import Cover from "../Cover/Cover";
 import LinkMore from "../LinkMore/LinkMore";
+import { uniqueId } from "lodash";
 
 const Story = (props) => {
   const { title, linkHref, coverImg, socials, children } = props;
@@ -15,7 +16,7 @@ const Story = (props) => {
         <LinkMore href={linkHref} className="story__link"/>
         <ul className="story___socials">
           {socials.map((social) => (
-            <a className="link" href={`/${social}`}>
+            <a key={uniqueId()} className="link" href={`/${social}`}>
               {social}
             </a>
           ))}

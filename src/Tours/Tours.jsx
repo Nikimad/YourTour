@@ -40,9 +40,8 @@ const Tours = () => {
     <Section>
       <ul className="tours">
         {tours.map((tour) => (
-          <li>
+          <li key={tour.name}>
             <Tour
-              key={tour.name}
               linkHref={`/${tour.name}`}
               coverImg={tour.cover}
             />

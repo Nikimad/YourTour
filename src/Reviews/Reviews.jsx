@@ -3,6 +3,7 @@ import Section from "../Section/Section";
 import Review from "../Review/Review";
 import mariaAvatar from "../assets/images/review-1.jpg";
 import pavelAvatar from "../assets/images/review-2.jpg";
+import { uniqueId } from 'lodash';
 
 const reviews = [
   {
@@ -29,7 +30,7 @@ const Reviews = () => {
     <Section id='reviews'>
       <ul className="reviews">
         {reviews.map((review) => (
-          <li>
+          <li key={uniqueId()}>
             <Review {...review} />
           </li>
         ))}
