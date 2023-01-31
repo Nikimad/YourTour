@@ -1,0 +1,44 @@
+.story {
+    display: grid;
+    align-content: space-between;
+    color: var(--white);
+    height: 455px;
+    padding: 1.875em;
+    cursor: pointer;
+}
+
+.story ul {
+    padding-left: 1.35em;
+}
+
+.story__header {
+    display: grid;
+    gap: 1.25em;
+    max-width: 29em;
+}
+
+.story__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story___socials {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .story {
+        height: 567px;
+        padding: 3em;
+    }
+    
+    .story__header {
+        gap: 1.85em;
+    }
+
+    .story___socials {
+        display: flex;
+        gap: 35px;
+    }
+}
