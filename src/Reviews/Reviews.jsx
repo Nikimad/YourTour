@@ -29,7 +29,7 @@ const Reviews = () => {
     <Section id='reviews'>
       <ul className="reviews">
         {reviews.map((review) => (
-          <li className="review bg_beige_200 br_main">
+          <li>
             <Review {...review} />
           </li>
         ))}

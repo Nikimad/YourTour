@@ -4,7 +4,7 @@ const Review = (props) => {
     const {authorName, texts, tour, authorAvatar} = props;
 
     return (
-        <>
+        <article className="review bg_beige_200 br_main">
           <div className="review__body">
             {texts.map((text) => <p className='fs_big'>{text}</p>)}
           </div>
@@ -13,7 +13,7 @@ const Review = (props) => {
             <p className="fs_small color_gray_300">{`Тур: ${tour}`}</p>
             <img className="review__avatar" src={authorAvatar} alt={`${authorName} avatar`}/>
           </div>
-        </>
+        </article>
     );
 };
 
