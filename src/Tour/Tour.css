@@ -1,0 +1,21 @@
+.tour {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 0.8em;
+    color: var(--white);
+    cursor: pointer;
+    height: 318px;
+    padding: 25px;
+}
+
+.tour__link {
+    margin-top: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .tour {
+        height: 531px;
+        padding: 50px;
+    }
+}
