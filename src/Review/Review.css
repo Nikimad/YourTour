@@ -2,7 +2,7 @@
     display: grid;
     align-content: space-between;
     gap: 56px;
-    overflow: hidden;
+    height: 100%;
     padding: 20px;
 }
 
