@@ -1,0 +1,15 @@
+.stories {
+    display: grid;
+    gap: 1.25em;
+}
+
+.stories > li::marker {
+    content: '';
+}
+
+
+@media (min-width: 768px) {
+    .stories {
+        gap: 2.5em;
+    }
+}
