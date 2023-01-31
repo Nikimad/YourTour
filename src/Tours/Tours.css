@@ -1,0 +1,21 @@
+.tours {
+    display: grid;
+    gap: 1.125rem;
+}
+
+.tours > li::marker {
+    content: '';
+}
+
+@media (min-width: 768px) {
+    .tours {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .tours {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+}
