@@ -6,11 +6,7 @@ const Cta = () => {
   return (
     <Section id="cta">
       <div className="cta">
-        <img
-          src={ctaImg}
-          className="cta__img"
-          alt="Долина с домом у озера"
-        />
+        <img src={ctaImg} className="cta__img" alt="Долина с домом у озера" />
         <div className="cta__body">
           <h3 className="h3 cta__heading">
             Пора в путешествие

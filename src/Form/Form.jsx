@@ -112,7 +112,13 @@ const Form = (props) => {
           Лицензионного Договора
         </a>
       </Checkbox>
-      <fieldset className={cn("form__fieldset", "form__controls", "form__field_fullwidth")}>
+      <fieldset
+        className={cn(
+          "form__fieldset",
+          "form__controls",
+          "form__field_fullwidth"
+        )}
+      >
         <legend className="visually-hidden">Элементы котроля формы</legend>
         <Input
           name="submit"

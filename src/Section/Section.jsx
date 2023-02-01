@@ -1,5 +1,5 @@
-import './Section.css';
-import cn from 'classnames';
+import "./Section.css";
+import cn from "classnames";
 
 const Section = (props) => {
   const { title, subtitle, id, className, children } = props;
