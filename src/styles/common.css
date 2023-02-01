@@ -37,6 +37,10 @@
     animation: link-hover 0.3s ease forwards;
 }
 
+.link:active {
+    color: var(--green-400);
+}
+
 @media screen and (min-width: 768px) {
     .body {
         font-size: 20px;

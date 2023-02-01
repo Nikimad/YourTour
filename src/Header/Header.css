@@ -25,6 +25,11 @@
     background-color: var(--orange-200);
 }
 
+.header__link:active {
+    color: var(--black);
+    background-color: var(--orange-100);
+}
+
 @media screen and (min-width: 768px) {
     .header {
         padding-block: 8.75em 3.25em;

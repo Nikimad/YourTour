@@ -16,6 +16,14 @@
     backdrop-filter: blur(27px);
 }
 
+.navbar-wrapper .link:active {
+    color: var(--orange-200);
+}
+
+.navbar-wrapper_colored .link:active {
+    color: var(--green-400);
+}
+
 .navbar {
     display: flex;
     gap: 10px;
