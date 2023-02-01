@@ -25,6 +25,10 @@
     margin: 0;
 }
 
+.form__controls {
+    gap: 10px;
+}
+
 .form__fieldset__legend {
     margin-bottom: 8px;
 }
@@ -80,6 +84,10 @@
 
     .form__field_fullwidth {
         grid-column: 1 / span 2;
+    }
+
+    .form__controls {
+        gap: 30px;
     }
 
     .form__button {
