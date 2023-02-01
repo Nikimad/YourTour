@@ -1,18 +1,18 @@
 @font-face {
-    font-family: var(--ff);
-    font-weight: var(--fw-reg);
+    font-family: "Roboto";
+    font-weight: 400;
     src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
-    font-family: var(--ff);
-    font-weight: var(--fw-med);
+    font-family: "Roboto";
+    font-weight: 500;
     src: url('/src/assets/fonts/Roboto/Roboto-Medium.ttf');
 }
 
 @font-face {
-    font-family: var(--ff);
-    font-weight: var(--fw-bold);
+    font-family: "Roboto";
+    font-weight: 700;
     src: url('/src/assets/fonts/Roboto/Roboto-Bold.ttf');
 }
 
