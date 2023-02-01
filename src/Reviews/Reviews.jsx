@@ -31,6 +31,7 @@ const Reviews = () => {
       id="reviews"
       title="Отзывы наших путешественников"
       subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+      className="container"
     >
       <ul className="reviews">
         {reviews.map((review) => (

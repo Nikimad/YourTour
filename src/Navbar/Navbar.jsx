@@ -10,7 +10,7 @@ const Navbar = ({ isFixed }) => {
 
   return (
     <div className={navbarWrapperClassName}>
-      <div className="navbar">
+      <div className="navbar container">
         <Logo className="navbar__logo" />
         <nav className="navbar__nav">
           <a href="#tours" className="link">

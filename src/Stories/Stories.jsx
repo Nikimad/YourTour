@@ -11,6 +11,7 @@ const Stories = () => {
       id="stories"
       title="Истории путешествий"
       subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+      className="container"
     >
       <ul className="stories">
         <li>

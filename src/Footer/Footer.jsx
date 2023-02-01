@@ -5,7 +5,7 @@ import { ReactComponent as VKlogo } from "../assets/svg/vk.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer container">
       <p className="footer__text color_gray_300">Наши социальные сети</p>
       <ul className="footer__socials">
         <li className="footer__socials__item">

@@ -14,12 +14,12 @@
     color: var(--orange-200);
 }
 
-.tour__link::after {
+.tour__nav__link::after {
     bottom: -3px;
     height: 2px;
 }
 
-.tours__nav__item_active .tour__link::after {
+.tours__nav__item_active .tour__nav__link::after {
     background-color: currentColor;
     width: 100%;
     animation: none;
@@ -28,6 +28,6 @@
 @media screen and (min-width: 768px) {
     .tours__nav {
         gap: 1.5em;
-        padding-block: 0.25em;
+        padding-top: 0.25em;
     }
 }

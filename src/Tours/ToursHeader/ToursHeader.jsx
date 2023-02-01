@@ -19,7 +19,7 @@ const ToursHeader = ({ setActive, active }) => {
       <ul className="tours__nav">
         <li className={getCn("popular")}>
           <a
-            className="link tour__link fs_big"
+            className="link tour__nav__link fs_big"
             href="/popular"
             onClick={(e) => onClick(e, "popular")}
           >
@@ -28,7 +28,7 @@ const ToursHeader = ({ setActive, active }) => {
         </li>
         <li className={getCn("author")}>
           <a
-            className="link tour__link fs_big"
+            className="link tour__nav__link fs_big"
             href="/author"
             onClick={(e) => onClick(e, "author")}
           >
@@ -37,7 +37,7 @@ const ToursHeader = ({ setActive, active }) => {
         </li>
         <li className={getCn("hikes")}>
           <a
-            className="link tour__link fs_big"
+            className="link tour__nav__link fs_big"
             href="/hikes"
             onClick={(e) => onClick(e, "hikes")}
           >
@@ -46,7 +46,7 @@ const ToursHeader = ({ setActive, active }) => {
         </li>
         <li className={getCn("rafting")}>
           <a
-            className="link tour__link fs_big"
+            className="link tour__nav__link fs_big"
             href="/rafting"
             onClick={(e) => onClick(e, "rafting")}
           >
