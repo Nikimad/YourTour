@@ -19,7 +19,7 @@ const Navbar = ({ isFixed }) => {
           <a href="#create-tour" className="link">
             Создать тур
           </a>
-          <a href="#reviwes" className="link">
+          <a href="#reviews" className="link">
             Отзывы
           </a>
           <a href="#stories" className="link">
