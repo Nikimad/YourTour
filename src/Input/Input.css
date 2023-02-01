@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+.input {
+    transition: 0.3s;
+}
+
 .input:not([type='submit'], [type='reset']) {
     border-radius: 10px;
     box-shadow: 0 0 0 1px var(--beige-200);
