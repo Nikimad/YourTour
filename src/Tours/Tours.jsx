@@ -7,6 +7,7 @@ import tour4 from "../assets/images/card-4.jpg";
 import tour5 from "../assets/images/card-5.jpg";
 import tour6 from "../assets/images/card-6.jpg";
 import Tour from "../Tour/Tour";
+import ToursHeaderContainer from "./ToursHeader/ToursHeaderContainer";
 
 const tours = [
   {
@@ -38,6 +39,7 @@ const tours = [
 const Tours = () => {
   return (
     <Section id="tours">
+      <ToursHeaderContainer/>
       <ul className="tours">
         {tours.map((tour) => (
           <li key={tour.name}>
