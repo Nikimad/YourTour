@@ -19,3 +19,10 @@
         padding: 50px;
     }
 }
+
+
+@media screen and (min-width: 1440px) {
+    .tour__title {
+        width: 90%;
+    }
+}
