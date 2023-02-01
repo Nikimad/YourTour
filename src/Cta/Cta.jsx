@@ -1,28 +1,35 @@
 import "./Cta.css";
 import ctaImg from "../assets/images/cta.jpg";
+import Section from "../Section/Section";
 
 const Cta = () => {
   return (
-    <div className="cta">
-      <img src={ctaImg} className="cta__img" alt="A house in the valley with lake"/>
-      <div className="cta__body">
-        <h3 className="h3 cta__heading">
-          Пора в путешествие
-          <br />
-          вместе с нами!
-        </h3>
-        <p>
-          <span className="color_gray_300">
-            Напиши на почту и узнай подробности
+    <Section id="cta">
+      <div className="cta">
+        <img
+          src={ctaImg}
+          className="cta__img"
+          alt="A house in the valley with lake"
+        />
+        <div className="cta__body">
+          <h3 className="h3 cta__heading">
+            Пора в путешествие
             <br />
-            на{" "}
-          </span>
-          <a className="link color_black" href="mailto: yourtour@gmail.com">
-            yourtour@gmail.com
-          </a>
-        </p>
+            вместе с нами!
+          </h3>
+          <p>
+            <span className="color_gray_300">
+              Напиши на почту и узнай подробности
+              <br />
+              на{" "}
+            </span>
+            <a className="link color_black" href="mailto: yourtour@gmail.com">
+              yourtour@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
