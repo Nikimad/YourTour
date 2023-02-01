@@ -14,6 +14,7 @@
     color: var(--black);
     background-color: rgba(243, 239, 232, 0.6);
     backdrop-filter: blur(27px);
+    animation: move-in 0.5s ease;
 }
 
 .navbar-wrapper .link:active {
@@ -43,15 +44,21 @@
 }
 
 @media screen and (min-width: 768px) {
-    
     .navbar__nav {
         display: flex;
         gap: 30px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .navbar__nav {
         gap: 50px
     }
 }
+ @keyframes move-in {
+    from {
+        top: -100%
+    } to {
+        top: 0;
+    }
+ }
