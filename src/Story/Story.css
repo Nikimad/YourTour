@@ -7,6 +7,10 @@
     cursor: pointer;
 }
 
+.story__title {
+    width: 60%;
+}
+
 .story ul {
     padding-left: 1.35em;
 }
@@ -35,6 +39,10 @@
     .story {
         height: 567px;
         padding: 3em;
+    }
+
+    .story__title {
+        width: 100%;
     }
     
     .story__header {

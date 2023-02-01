@@ -9,7 +9,7 @@ const Story = (props) => {
   return (
     <article className="story cover-container link-more-container br_main">
       <div className="story__header">
-        <h3 className="h3">{title}</h3>
+        <h3 className="h3 story__title">{title}</h3>
         {children}
       </div>
       <div className="story__footer">
