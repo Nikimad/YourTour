@@ -37,7 +37,7 @@ const tours = [
 
 const Tours = () => {
   return (
-    <Section>
+    <Section id="tours">
       <ul className="tours">
         {tours.map((tour) => (
           <li key={tour.name}>

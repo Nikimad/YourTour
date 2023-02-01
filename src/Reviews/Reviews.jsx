@@ -1,9 +1,9 @@
-import './Reviews.css';
+import "./Reviews.css";
 import Section from "../Section/Section";
 import Review from "../Review/Review";
 import mariaAvatar from "../assets/images/review-1.jpg";
 import pavelAvatar from "../assets/images/review-2.jpg";
-import { uniqueId } from 'lodash';
+import { uniqueId } from "lodash";
 
 const reviews = [
   {
@@ -27,7 +27,11 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <Section id='reviews'>
+    <Section
+      id="reviews"
+      title="Отзывы наших путешественников"
+      subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+    >
       <ul className="reviews">
         {reviews.map((review) => (
           <li key={uniqueId()}>

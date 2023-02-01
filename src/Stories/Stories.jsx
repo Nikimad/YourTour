@@ -7,7 +7,11 @@ import story3 from "../assets/images/story-3.jpg";
 
 const Stories = () => {
   return (
-    <Section>
+    <Section
+      id="stories"
+      title="Истории путешествий"
+      subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+    >
       <ul className="stories">
         <li>
           <Story

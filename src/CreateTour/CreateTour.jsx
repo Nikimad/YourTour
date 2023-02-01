@@ -1,12 +1,16 @@
 import Section from "../Section/Section";
-import FormContainer from '../Form/FormContainer';
+import FormContainer from "../Form/FormContainer";
 
 const CreateTour = () => {
-    return (
-        <Section id="create-tour">
-            <FormContainer/>
-        </Section>
-    );
+  return (
+    <Section
+      id="create-tour"
+      title="Собери свой тур"
+      subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+    >
+      <FormContainer />
+    </Section>
+  );
 };
 
 export default CreateTour;
