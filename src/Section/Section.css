@@ -7,6 +7,7 @@
 .section__header {
     display: grid;
     justify-content: center;
+    justify-items: center;
     text-align: center;
     gap: 20px;
 }
@@ -14,10 +15,18 @@
 @media screen and (min-width: 768px) {
     .section {
         gap: 100px;
-        padding-block: 75px;
+        padding-block: 67.5px;
     }
 
     .section__header {
         gap: 30px;
+    }
+
+    .section__header__title {
+        max-width: 95%;
+    }
+
+    .section__header__subtitle {
+        max-width: 55%;
     }
 }

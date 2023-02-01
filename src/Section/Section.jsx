@@ -9,8 +9,8 @@ const Section = (props) => {
     <section className={cn("section", className)} id={id}>
       {isHeaderCustom && (
         <div className="section__header">
-          <h2 className="h2">{title}</h2>
-          <p className="color_gray_300">{subtitle}</p>
+          <h2 className="h2 section__header__title">{title}</h2>
+          <p className="color_gray_300 section__header__subtitle">{subtitle}</p>
         </div>
       )}
       {children}
