@@ -22,6 +22,12 @@
     letter-spacing: 0.02em;
 }
 
+.h2 {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+}
+
 .h3 {
     font-size: 23px;
     font-weight: var(--fw-bold);
@@ -46,6 +52,12 @@
     .h1 {
         font-size: 96px;
         line-height: 105px;
+    }
+
+    .h2 {
+        font-size: 59px;
+        line-height: 73px;
+        letter-spacing: 0em;
     }
 
     .h3 {
