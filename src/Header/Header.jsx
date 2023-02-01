@@ -11,7 +11,7 @@ const Header = () => {
           Идейные соображения высшего порядка, а также рамки и место обучения
           кадров
         </p>
-        <a href="#find-tour" className="header__link fs_small br_10">
+        <a href="#gallery" className="header__link fs_small br_10">
           Найти тур
         </a>
       </div>
