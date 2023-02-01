@@ -11,6 +11,12 @@
     background-color: var(--beige-100);
 }
 
+.container {
+    width: min(calc(1170px + (53px * 2)), 100%);
+    padding: 0 21px;
+    margin: 0 auto;
+}
+
 .link {
     position: relative;
     color: inherit;
@@ -35,6 +41,10 @@
     .body {
         font-size: 20px;
         line-height: 28px;
+    }
+
+    .container {
+        padding: 0 53px;
     }
 }
 
