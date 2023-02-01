@@ -49,19 +49,19 @@ const Gallery = () => {
             alt=""
           />
           <img className="gallery__img br_main" src={travel8} alt="" />
-          <img className="gallery__img br_main" src={travel9} alt="" />
+          <img className="gallery__img br_main" src={travel13} alt="" />
         </div>
         <div className="gallery__row">
+          <img className="gallery__img br_main" src={travel9} alt="" />
           <img className="gallery__img br_main" src={travel10} alt="" />
-          <img className="gallery__img br_main" src={travel11} alt="" />
           <img
             className="gallery__img gallery__img_hide-mob br_main"
-            src={travel12}
+            src={travel11}
             alt=""
           />
           <img
             className="gallery__img gallery__img_hide-tab br_main"
-            src={travel13}
+            src={travel12}
             alt=""
           />
         </div>

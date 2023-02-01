@@ -3,6 +3,8 @@
     display: grid;
     justify-items: center;
     gap: 1.125em;
+    width: min(1900px, 100%);
+    margin: 0 auto;
 }
 
 .gallery__img {
@@ -17,7 +19,6 @@
     grid-auto-columns: 1fr;
     gap: 0.625em;
     height: 110px;
-    width: min(1920px, 100%);
 }
 
 .gallery__img_hide-mob {
@@ -47,7 +48,6 @@
 
 @media (min-width: 1440px) {
     .gallery {
-        padding-inline: 1.5em;
         row-gap: calc(1.5em + 3px);
     }
 
