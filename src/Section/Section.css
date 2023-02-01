@@ -1,11 +1,23 @@
 .section {
     display: grid;
-    justify-content: center;
     gap: 100px;
+    padding-block: 75px;
+}
+
+.section__header {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
     .section {
         gap: 50px;
+        padding-block: 37.5px;
+    }
+
+    .section__header {
+        gap: 20px;
     }
 }
