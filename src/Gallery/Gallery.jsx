@@ -23,46 +23,70 @@ const Gallery = () => {
     >
       <div className="gallery">
         <div className="gallery__row">
-          <img className="gallery__img br_main" src={travel1} alt="" />
+          <img
+            className="gallery__img br_main"
+            src={travel1}
+            alt="Самолёт над заливом"
+          />
           <img
             className="gallery__img gallery__img_hide-tab br_main"
             src={travel2}
-            alt=""
+            alt="Кэмпинг в пустыне"
           />
           <img
             className="gallery__img gallery__img_hide-mob  br_main"
             src={travel3}
-            alt=""
+            alt="Горная прогулка"
           />
-          <img className="gallery__img br_main" src={travel4} alt="" />
+          <img
+            className="gallery__img br_main"
+            src={travel4}
+            alt="Пустая дорога"
+          />
         </div>
         <div className="gallery__row">
-          <img className="gallery__img br_main" src={travel5} alt="" />
+          <img
+            className="gallery__img br_main"
+            src={travel5}
+            alt="Скалы у моря"
+          />
           <img
             className="gallery__img gallery__img_hide-mob br_main"
             src={travel6}
-            alt=""
+            alt="Карта"
           />
           <img
             className="gallery__img gallery__img_hide-tab br_main"
             src={travel7}
-            alt=""
+            alt="Мост в лесу"
           />
-          <img className="gallery__img br_main" src={travel8} alt="" />
-          <img className="gallery__img br_main" src={travel13} alt="" />
+          <img className="gallery__img br_main" src={travel8} alt="Кэмпинг" />
+          <img
+            className="gallery__img br_main"
+            src={travel13}
+            alt="Узкие улицы"
+          />
         </div>
         <div className="gallery__row">
-          <img className="gallery__img br_main" src={travel9} alt="" />
-          <img className="gallery__img br_main" src={travel10} alt="" />
+          <img
+            className="gallery__img br_main"
+            src={travel9}
+            alt="Старый город"
+          />
+          <img
+            className="gallery__img br_main"
+            src={travel10}
+            alt="Озеро в горах"
+          />
           <img
             className="gallery__img gallery__img_hide-mob br_main"
             src={travel11}
-            alt=""
+            alt="Оживлённая улица"
           />
           <img
             className="gallery__img gallery__img_hide-tab br_main"
             src={travel12}
-            alt=""
+            alt="Сапсёрфинг"
           />
         </div>
       </div>

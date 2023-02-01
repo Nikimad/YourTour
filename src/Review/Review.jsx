@@ -12,7 +12,7 @@ const Review = (props) => {
           <div className="review__footer">
             <h3 className="h3">{authorName}</h3>
             <p className="fs_small color_gray_300">{`Тур: ${tour}`}</p>
-            <img className="review__avatar" src={authorAvatar} alt={`${authorName} avatar`}/>
+            <img className="review__avatar" src={authorAvatar} alt={`${authorName} аватар`}/>
           </div>
         </article>
     );

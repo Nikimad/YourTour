@@ -9,7 +9,7 @@ const Cta = () => {
         <img
           src={ctaImg}
           className="cta__img"
-          alt="A house in the valley with lake"
+          alt="Долина с домом у озера"
         />
         <div className="cta__body">
           <h3 className="h3 cta__heading">
