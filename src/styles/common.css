@@ -3,6 +3,11 @@
 @import './typography.css';
 @import './utilities.css';
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-block-start: 100px;
+}
+
 .body {
     font-size: 16px;
     line-height: 23px;
