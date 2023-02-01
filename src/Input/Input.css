@@ -20,9 +20,14 @@
     background-color: var(--beige-200);
 }
 
-.input:not([type='submit'], [type='reset']) :focus {
+.input:not([type='submit'], [type='reset']):focus {
     outline: none;
     box-shadow: 0 0 0 1px var(--gray-300);
+}
+
+.input[type='submit']:focus, 
+.input[type='reset']:focus {
+    box-shadow: 0 0 0 3px var(--black);
 }
 
 .input[type='date'] {
