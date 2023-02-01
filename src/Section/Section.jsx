@@ -1,11 +1,12 @@
 import './Section.css';
+import cn from 'classnames';
 
 const Section = (props) => {
-  const { title, subtitle, id, children } = props;
+  const { title, subtitle, id, className, children } = props;
   const isHeaderCustom = typeof title === "string";
 
   return (
-    <section className="section" id={id}>
+    <section className={cn("section", className)} id={id}>
       {isHeaderCustom && (
         <div className="section__header">
           <h2 className="h2">{title}</h2>
