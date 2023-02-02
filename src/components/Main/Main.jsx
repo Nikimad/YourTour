@@ -6,17 +6,15 @@ import Gallery from "../Gallery";
 import Stories from "../Stories";
 import Cta from "../Cta";
 
-const Main = () => {
-  return (
-    <main className="main">
-      <Tours />
-      <CreateTour />
-      <Reviews />
-      <Gallery />
-      <Stories />
-      <Cta />
-    </main>
-  );
-};
+const Main = () => (
+  <main className="main">
+    <Tours />
+    <CreateTour />
+    <Reviews />
+    <Gallery />
+    <Stories />
+    <Cta />
+  </main>
+);
 
 export default Main;
