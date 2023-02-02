@@ -3,9 +3,7 @@ import Cover from "../Cover/Cover";
 import LinkMore from "../LinkMore/LinkMore";
 import { uniqueId } from "lodash";
 
-const Story = (props) => {
-  const { title, linkHref, coverImg, socials, children } = props;
-
+const Story = ({ title, linkHref, coverImg, socials, children }) => {
   return (
     <article className="story cover-container link-more-container br_main">
       <div className="story__header">
