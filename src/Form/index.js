@@ -28,3 +28,5 @@ export const reducer = (state, action) => {
       return state;
   }
 };
+
+export { default } from "./FormContainer";
