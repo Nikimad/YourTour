@@ -2,10 +2,10 @@ import { useReducer } from "react";
 import { reducer, initialState, FORM_ACTIONS } from "./index";
 import Form from "./Form";
 
-const FormContainer = (props) => {
+const FormContainer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const onChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
 
     return dispatch({
@@ -17,13 +17,13 @@ const FormContainer = (props) => {
     });
   };
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     return dispatch({ type: FORM_ACTIONS.submit });
   };
 
-  const onReset = (e) => {
+  const handleReset = (e) => {
     e.preventDefault();
 
     return dispatch({ type: FORM_ACTIONS.reset });
@@ -31,11 +31,11 @@ const FormContainer = (props) => {
 
   return (
     <Form
-      onChange={onChange}
-      onSubmit={onSubmit}
-      onReset={onReset}
+      onChange={handleChange}
+      onSubmit={handleSubmit}
+      onReset={handleReset}
       {...state}
-    ></Form>
+    />
   );
 };
 
