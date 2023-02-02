@@ -22,7 +22,8 @@
 }
 
 .story__footer {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,7 +51,8 @@
     }
 
     .story___socials {
-        display: flex;
+        display: grid;
+        grid-auto-flow: column;
         gap: 35px;
     }
 }
