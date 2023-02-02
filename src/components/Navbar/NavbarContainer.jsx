@@ -1,10 +1,10 @@
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
-import { navbarBreakPoint as breakPoint } from ".";
 
 const NavbarContainer = () => {
   const [isFixed, setFixed] = useState(false);
-
+  const breakPoint = 450;
+  
   const handleScroll = (e) => {
     setFixed(e.target.documentElement.scrollTop > breakPoint);
   };
