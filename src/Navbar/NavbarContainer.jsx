@@ -14,11 +14,7 @@ const NavbarContainer = () => {
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <>
-      <Navbar isFixed={isFixed} />
-    </>
-  );
+  return <Navbar isFixed={isFixed} />;
 };
 
 export default NavbarContainer;

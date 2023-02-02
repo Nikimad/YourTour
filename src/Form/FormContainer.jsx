@@ -30,14 +30,12 @@ const FormContainer = (props) => {
   };
 
   return (
-    <>
-      <Form
-        onChange={onChange}
-        onSubmit={onSubmit}
-        onReset={onReset}
-        {...state}
-      ></Form>
-    </>
+    <Form
+      onChange={onChange}
+      onSubmit={onSubmit}
+      onReset={onReset}
+      {...state}
+    ></Form>
   );
 };
 
