@@ -49,7 +49,7 @@ const ToursHeader = ({ setActive, active }) => {
         </li>
         <li className={getCn("biking")}>
           <a
-            className="link tour__link fs_big"
+            className="link tour__nav__link fs_big"
             href="/biking"
             onClick={(e) => setActive(e, "biking")}
           >
