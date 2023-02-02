@@ -1,8 +1,7 @@
 import "./Section.css";
 import cn from "classnames";
 
-const Section = (props) => {
-  const { title, subtitle, id, className, children } = props;
+const Section = ({ title, subtitle, id, className, children }) => {
   const isHeaderCustom = typeof title === "string";
 
   return (
