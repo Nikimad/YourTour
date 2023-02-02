@@ -1,5 +1,5 @@
-import Section from "../Section/Section";
-import FormContainer from "../Form";
+import Section from "../Section";
+import Form from "../Form";
 
 const CreateTour = () => {
   return (
@@ -9,7 +9,7 @@ const CreateTour = () => {
       subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
       className="container"
     >
-      <FormContainer />
+      <Form />
     </Section>
   );
 };
