@@ -1,6 +1,6 @@
 import "./Cta.css";
+import Section from "../Section";
 import ctaImg from "../../assets/images/cta.jpg";
-import Section from "../Section/Section";
 
 const Cta = () => {
   return (
