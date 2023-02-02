@@ -1,9 +1,7 @@
 import "./Review.css";
 import { uniqueId } from "lodash";
 
-const Review = (props) => {
-  const { authorName, texts, tour, authorAvatar } = props;
-
+const Review = ({ authorName, texts, tour, authorAvatar }) => {
   return (
     <article className="review bg_beige_200 br_main">
       <div className="review__body">
