@@ -1,6 +1,6 @@
 import "./Reviews.css";
-import Section from "../Section/Section";
-import Review from "../Review/Review";
+import Section from "../Section";
+import Review from "../Review";
 import mariaAvatar from "../../assets/images/review-1.jpg";
 import pavelAvatar from "../../assets/images/review-2.jpg";
 import { uniqueId } from "lodash";
