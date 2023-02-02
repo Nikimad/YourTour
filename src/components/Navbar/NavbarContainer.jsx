@@ -1,18 +1,21 @@
 import Navbar from "./Navbar";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const NavbarContainer = () => {
   const [isFixed, setFixed] = useState(false);
   const breakPoint = 450;
-  
-  const handleScroll = (e) => {
-    setFixed(e.target.documentElement.scrollTop > breakPoint);
-  };
+
+  const handleScroll = useCallback(
+    (e) => {
+      setFixed(e.target.documentElement.scrollTop > breakPoint);
+    },
+    [breakPoint]
+  );
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
     return () => document.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   return <Navbar isFixed={isFixed} />;
 };
