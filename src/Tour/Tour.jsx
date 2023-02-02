@@ -2,9 +2,7 @@ import "./Tour.css";
 import Cover from "../Cover/Cover";
 import LinkMore from "../LinkMore/LinkMore";
 
-const Tour = (props) => {
-  const { title, price, linkHref, coverImg } = props;
-
+const Tour = ({ title, price, linkHref, coverImg }) => {
   return (
     <article className="tour link-more-container cover-container br_main">
       <h3 className="h3 tour__title">{title}</h3>
