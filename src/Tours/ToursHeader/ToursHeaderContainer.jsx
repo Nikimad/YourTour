@@ -3,8 +3,13 @@ import ToursHeader from "./ToursHeader";
 
 const ToursHeaderContainer = () => {
   const [active, setActive] = useState("popular");
+  const handleActive = (e, name) => {
+    e.preventDefault();
 
-  return <ToursHeader active={active} setActive={setActive} />;
+    setActive(name);
+  };
+
+  return <ToursHeader active={active} setActive={handleActive} />;
 };
 
 export default ToursHeaderContainer;

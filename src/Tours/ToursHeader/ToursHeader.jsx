@@ -7,12 +7,6 @@ const ToursHeader = ({ setActive, active }) => {
       tours__nav__item_active: name === active,
     });
 
-  const onClick = (e, name) => {
-    e.preventDefault();
-
-    setActive(name);
-  };
-
   return (
     <div className="section__header">
       <h2 className="h2">Выбери свой тур</h2>
@@ -21,7 +15,7 @@ const ToursHeader = ({ setActive, active }) => {
           <a
             className="link tour__nav__link fs_big"
             href="/popular"
-            onClick={(e) => onClick(e, "popular")}
+            onClick={(e) => setActive(e, "popular")}
           >
             Популярные
           </a>
@@ -30,7 +24,7 @@ const ToursHeader = ({ setActive, active }) => {
           <a
             className="link tour__nav__link fs_big"
             href="/author"
-            onClick={(e) => onClick(e, "author")}
+            onClick={(e) => setActive(e, "author")}
           >
             Авторские
           </a>
@@ -39,7 +33,7 @@ const ToursHeader = ({ setActive, active }) => {
           <a
             className="link tour__nav__link fs_big"
             href="/hikes"
-            onClick={(e) => onClick(e, "hikes")}
+            onClick={(e) => setActive(e, "hikes")}
           >
             Походы
           </a>
@@ -48,7 +42,7 @@ const ToursHeader = ({ setActive, active }) => {
           <a
             className="link tour__nav__link fs_big"
             href="/rafting"
-            onClick={(e) => onClick(e, "rafting")}
+            onClick={(e) => setActive(e, "rafting")}
           >
             Сплавы
           </a>
@@ -57,7 +51,7 @@ const ToursHeader = ({ setActive, active }) => {
           <a
             className="link tour__link fs_big"
             href="/biking"
-            onClick={(e) => onClick(e, "biking")}
+            onClick={(e) => setActive(e, "biking")}
           >
             Велопрогулки
           </a>
