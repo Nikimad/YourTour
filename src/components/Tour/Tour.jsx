@@ -1,6 +1,6 @@
 import "./Tour.css";
-import Cover from "../Cover/Cover";
-import LinkMore from "../LinkMore/LinkMore";
+import Cover from "../Cover";
+import LinkMore from "../LinkMore";
 
 const Tour = ({ title, price, linkHref, coverImg }) => {
   return (
