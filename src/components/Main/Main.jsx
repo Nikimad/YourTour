@@ -1,10 +1,10 @@
 import "./Main.css";
-import Tours from "../Tours/Tours";
-import Reviews from "../Reviews/Reviews";
-import CreateTour from "../CreateTour/CreateTour";
-import Gallery from "../Gallery/Gallery";
-import Stories from "../Stories/Stories";
-import Cta from "../Cta/Cta";
+import Tours from "../Tours";
+import Reviews from "../Reviews";
+import CreateTour from "../CreateTour";
+import Gallery from "../Gallery";
+import Stories from "../Stories";
+import Cta from "../Cta";
 
 const Main = () => {
   return (
