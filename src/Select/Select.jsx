@@ -2,18 +2,16 @@ import "./Select.css";
 import cn from "classnames";
 import { uniqueId } from "lodash";
 
-const Select = (props) => {
-  const {
-    label,
-    defaultOption,
-    options,
-    value,
-    name,
-    className,
-    colorClass,
-    onChange,
-  } = props;
-
+const Select = ({
+  label,
+  defaultOption,
+  options,
+  value,
+  name,
+  className,
+  colorClass,
+  onChange,
+}) => {
   const selectProps = {
     label,
     value,

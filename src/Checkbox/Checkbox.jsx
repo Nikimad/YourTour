@@ -1,17 +1,15 @@
 import "./Checkbox.css";
 import cn from "classnames";
 
-const Checkbox = (props) => {
-  const {
-    name,
-    labelClassName,
-    boxClassName,
-    onChange,
-    value,
-    checked,
-    children,
-  } = props;
-
+const Checkbox = ({
+  name,
+  labelClassName,
+  boxClassName,
+  onChange,
+  value,
+  checked,
+  children,
+}) => {
   const inputProps = {
     name,
     onChange,

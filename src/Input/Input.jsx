@@ -1,9 +1,15 @@
 import "./Input.css";
 import cn from "classnames";
 
-const Input = (props) => {
-  const { label, name, type, placeholder, className, onChange, value } = props;
-
+const Input = ({
+  label,
+  name,
+  type,
+  placeholder,
+  className,
+  onChange,
+  value,
+}) => {
   const inputProps = {
     name,
     type,

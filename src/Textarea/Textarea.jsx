@@ -1,9 +1,13 @@
 import cn from "classnames";
 
-const Textarea = (props) => {
-  const { label, labelClassName, name, textareaClassName, onChange, value } =
-    props;
-
+const Textarea = ({
+  label,
+  labelClassName,
+  name,
+  textareaClassName,
+  onChange,
+  value,
+}) => {
   const textareaProps = {
     name,
     className: cn("input", textareaClassName),

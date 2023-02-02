@@ -1,8 +1,6 @@
 import "./Radio.css";
 
-const Radio = (props) => {
-  const { name, onChange, value, checked, children } = props;
-
+const Radio = ({ name, onChange, value, checked, children }) => {
   const inputProps = {
     name,
     onChange,
