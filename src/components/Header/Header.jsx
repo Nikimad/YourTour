@@ -1,10 +1,10 @@
 import "./Header.css";
-import NavbarContainer from "../Navbar/NavbarContainer";
+import Navbar from "../Navbar";
 
 const Header = () => {
   return (
     <header className="header">
-      <NavbarContainer />
+      <Navbar />
       <div className="container header__container">
         <h1 className="h1">Идеальные путешествия существуют</h1>
         <p>
