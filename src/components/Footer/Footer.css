@@ -23,6 +23,10 @@
     gap: 5px;
 }
 
+.footer__socials__item::marker {
+    content: '';
+}
+
 
 @media screen and (min-width: 768px) {
     .footer {
