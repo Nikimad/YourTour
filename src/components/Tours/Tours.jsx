@@ -1,13 +1,13 @@
-import Section from "../Section/Section";
 import "./Tours.css";
+import Section from "../Section";
+import Tour from "../Tour";
+import ToursHeader from "../ToursHeader";
 import tour1 from "../../assets/images/card-1.jpg";
 import tour2 from "../../assets/images/card-2.jpg";
 import tour3 from "../../assets/images/card-3.jpg";
 import tour4 from "../../assets/images/card-4.jpg";
 import tour5 from "../../assets/images/card-5.jpg";
 import tour6 from "../../assets/images/card-6.jpg";
-import Tour from "../Tour/Tour";
-import ToursHeaderContainer from "./ToursHeader/ToursHeaderContainer";
 
 const tours = [
   {
@@ -39,7 +39,7 @@ const tours = [
 const Tours = () => {
   return (
     <Section id="tours" className="container">
-      <ToursHeaderContainer />
+      <ToursHeader />
       <ul className="tours">
         {tours.map((tour) => (
           <li key={tour.name}>
