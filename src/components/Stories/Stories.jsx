@@ -12,8 +12,7 @@ const Stories = () => (
     subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
     className="container"
   >
-    <ul className="stories">
-      <li>
+    <div className="stories">
         <Story
           title="Автостопом в Стамбул"
           linkHref="/story1"
@@ -31,8 +30,6 @@ const Stories = () => (
             <li>красивый город</li>
           </ul>
         </Story>
-      </li>
-      <li>
         <Story
           title="Автостопом в Стамбул"
           linkHref="/story2"
@@ -45,8 +42,6 @@ const Stories = () => (
             формировании новых предложений.
           </p>
         </Story>
-      </li>
-      <li>
         <Story
           title="Автостопом в Стамбул"
           linkHref="/story3"
@@ -59,8 +54,7 @@ const Stories = () => (
             формировании новых предложений.
           </p>
         </Story>
-      </li>
-    </ul>
+    </div>
   </Section>
 );
 

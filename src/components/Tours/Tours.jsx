@@ -39,13 +39,15 @@ const tours = [
 const Tours = () => (
   <Section id="tours" className="container">
     <ToursHeader />
-    <ul className="tours">
+    <div className="tours">
       {tours.map((tour) => (
-        <li key={tour.name}>
-          <Tour linkHref={`/${tour.name}`} coverImg={tour.cover} />
-        </li>
+        <Tour
+          key={tour.name}
+          linkHref={`/${tour.name}`}
+          coverImg={tour.cover}
+        />
       ))}
-    </ul>
+    </div>
   </Section>
 );
 

@@ -32,13 +32,11 @@ const Reviews = () => (
     subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
     className="container"
   >
-    <ul className="reviews">
+    <div className="reviews">
       {reviews.map((review) => (
-        <li key={uniqueId()}>
-          <Review {...review} />
-        </li>
+        <Review key={uniqueId()} {...review} />
       ))}
-    </ul>
+    </div>
   </Section>
 );
 
