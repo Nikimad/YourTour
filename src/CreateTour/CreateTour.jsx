@@ -1,5 +1,5 @@
 import Section from "../Section/Section";
-import FormContainer from "../Form/FormContainer";
+import FormContainer from "../Form";
 
 const CreateTour = () => {
   return (
