@@ -1,9 +1,9 @@
 import "./Stories.css";
 import Section from "../Section/Section";
 import Story from "../Story/Story";
-import story1 from "../assets/images/story-1.jpg";
-import story2 from "../assets/images/story-2.jpg";
-import story3 from "../assets/images/story-3.jpg";
+import story1 from "../../assets/images/story-1.jpg";
+import story2 from "../../assets/images/story-2.jpg";
+import story3 from "../../assets/images/story-3.jpg";
 
 const Stories = () => {
   return (

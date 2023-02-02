@@ -1,5 +1,5 @@
 import "./Cta.css";
-import ctaImg from "../assets/images/cta.jpg";
+import ctaImg from "../../assets/images/cta.jpg";
 import Section from "../Section/Section";
 
 const Cta = () => {
