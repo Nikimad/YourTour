@@ -1,5 +1,5 @@
 import "./Gallery.css";
-import Section from "../Section/Section";
+import Section from "../Section";
 import travel1 from "../../assets/images/travel-1.jpg";
 import travel2 from "../../assets/images/travel-2.jpg";
 import travel3 from "../../assets/images/travel-3.jpg";
