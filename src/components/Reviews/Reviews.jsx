@@ -25,23 +25,21 @@ const reviews = [
   },
 ];
 
-const Reviews = () => {
-  return (
-    <Section
-      id="reviews"
-      title="Отзывы наших путешественников"
-      subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
-      className="container"
-    >
-      <ul className="reviews">
-        {reviews.map((review) => (
-          <li key={uniqueId()}>
-            <Review {...review} />
-          </li>
-        ))}
-      </ul>
-    </Section>
-  );
-};
+const Reviews = () => (
+  <Section
+    id="reviews"
+    title="Отзывы наших путешественников"
+    subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+    className="container"
+  >
+    <ul className="reviews">
+      {reviews.map((review) => (
+        <li key={uniqueId()}>
+          <Review {...review} />
+        </li>
+      ))}
+    </ul>
+  </Section>
+);
 
 export default Reviews;
