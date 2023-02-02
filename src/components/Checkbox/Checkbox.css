@@ -1,7 +1,6 @@
 .check {
     position: relative;
     display: flex;
-    gap: 10px;
     width: fit-content;
 }
 
@@ -16,6 +15,7 @@
     background-position: 50% 50%;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 10px;
 }
 
 @media (min-width: 768px) {

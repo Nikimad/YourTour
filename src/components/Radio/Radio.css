@@ -1,7 +1,6 @@
 .radio {
     position: relative;
     display: flex;
-    gap: 10px;
 }
 
 .radio__span {
@@ -20,6 +19,7 @@
     background-position: 50% 50%;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 10px;
 }
 
 @media (min-width: 768px) {
