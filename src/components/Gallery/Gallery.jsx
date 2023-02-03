@@ -19,6 +19,7 @@ const Gallery = () => (
     id="gallery"
     title="Фотографии путешествий"
     subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
+    className='gallery-section'
   >
     <div className="gallery">
       <div className="gallery__row">

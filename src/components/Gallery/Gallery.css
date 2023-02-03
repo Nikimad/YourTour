@@ -1,3 +1,9 @@
+.gallery-section .section__header {
+    width: min(calc(1170px + (53px * 2)), 100%);
+    padding: 0 21px;
+    margin: 0 auto;
+}
+
 .gallery {
     padding-inline: 1.25rem;
     display: grid;
@@ -30,6 +36,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .gallery-section .section__header {
+        padding: 0 53px;
+    }
+
     .gallery {
         row-gap: 1.5em;
         column-gap: 1em;
