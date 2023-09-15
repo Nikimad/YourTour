@@ -1,5 +1,5 @@
-import "./ToursHeader.css";
 import cn from "classnames";
+import "./ToursHeader.css";
 
 const ToursHeader = ({ setActive, active }) => {
   const getCn = (name) =>
