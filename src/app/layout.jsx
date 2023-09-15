@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "YourTour",
-  description: "Идеальные путешествия, выбери или создай тур, путешествуй вместе с нами",
+  description:
+    "Идеальные путешествия, выбери или создай тур, путешествуй вместе с нами",
   keywords: "путешествия, туры, походы, сплавы, велопрогулки",
 };
 
