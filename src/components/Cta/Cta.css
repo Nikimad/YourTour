@@ -12,17 +12,21 @@
     text-align: center;
 }
 
-.cta__img {
+.cta__img-wrapper {
+    position: relative;
     height: 133px;
+    aspect-ratio: 1/1;
     border-radius: 20px;
+    overflow: hidden;
 }
+
 
 @media screen and (min-width: 768px) {
     .cta {
         grid-template-columns: auto auto;
     }
 
-    .cta__img {
+    .cta__img-wrapper {
         height: 370px;
         border-radius: 50px;
     }

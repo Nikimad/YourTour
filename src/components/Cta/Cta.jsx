@@ -1,10 +1,19 @@
-import "./Cta.css";
+import ctaImg from "@assets/images/cta.jpg";
 import Section from "../Section";
+import Image from "next/image";
+import "./Cta.css";
 
 const Cta = () => (
   <Section id="cta">
     <div className="cta">
-      <img src="/assets/images/cta.jpg" className="cta__img" alt="Долина с домом у озера" />
+      <div className="cta__img-wrapper">
+        <Image
+          src={ctaImg}
+          alt="Долина с домом у озера"
+          fill
+          sizes="100%"
+         />
+      </div>
       <div className="cta__body">
         <h3 className="h3 cta__heading">
           Пора в путешествие
