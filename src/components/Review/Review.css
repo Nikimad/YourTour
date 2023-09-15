@@ -17,14 +17,19 @@
     grid-template-rows: auto auto;
 }
 
-.review__avatar {
+.review__avatar-wrapper {
+    position: relative;
     grid-row: 1 / span 2;
     grid-column: 2 / span 1;
     width: 75px;
     height: 75px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.review__avatar {
     object-fit: cover;
     object-position: center;
-    border-radius: 100%;
 }
 
 @media screen and (min-width: 768px) {
