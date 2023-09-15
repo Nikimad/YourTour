@@ -1,6 +1,9 @@
-import "./Stories.css";
+import story1 from "@assets/images/story-1.jpg";
+import story2 from "@assets/images/story-2.jpg";
+import story3 from "@assets/images/story-3.jpg";
 import Section from "../Section";
 import Story from "../Story";
+import "./Stories.css";
 
 const Stories = () => (
   <Section
@@ -10,47 +13,47 @@ const Stories = () => (
     className="container"
   >
     <div className="stories">
-        <Story
-          title="Автостопом в Стамбул"
-          linkHref="/story1"
-          coverImg="/assets/images/story-1.jpg"
-          socials={["instagram", "facebook", "YouTube"]}
-        >
-          <p>
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров обеспечивает широкому кругу (специалистов) участие в
-            формировании новых предложений:
-          </p>
-          <ul>
-            <li>вкусная еда</li>
-            <li>дешевый транспорт</li>
-            <li>красивый город</li>
-          </ul>
-        </Story>
-        <Story
-          title="Автостопом в Стамбул"
-          linkHref="/story2"
-          coverImg="/assets/images/story-2.jpg"
-          socials={["instagram", "ВКонтакте"]}
-        >
-          <p>
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров обеспечивает широкому кругу (специалистов) участие в
-            формировании новых предложений.
-          </p>
-        </Story>
-        <Story
-          title="Автостопом в Стамбул"
-          linkHref="/story3"
-          coverImg="/assets/images/story-3.jpg"
-          socials={["instagram", "facebook", "ВКонтакте"]}
-        >
-          <p>
-            Идейные соображения высшего порядка, а также рамки и место обучения
-            кадров обеспечивает широкому кругу (специалистов) участие в
-            формировании новых предложений.
-          </p>
-        </Story>
+      <Story
+        title="Автостопом в Стамбул"
+        linkHref="/story1"
+        coverImg={story1}
+        socials={["instagram", "facebook", "YouTube"]}
+      >
+        <p>
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров обеспечивает широкому кругу (специалистов) участие в
+          формировании новых предложений:
+        </p>
+        <ul>
+          <li>вкусная еда</li>
+          <li>дешевый транспорт</li>
+          <li>красивый город</li>
+        </ul>
+      </Story>
+      <Story
+        title="Автостопом в Стамбул"
+        linkHref="/story2"
+        coverImg={story2}
+        socials={["instagram", "ВКонтакте"]}
+      >
+        <p>
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров обеспечивает широкому кругу (специалистов) участие в
+          формировании новых предложений.
+        </p>
+      </Story>
+      <Story
+        title="Автостопом в Стамбул"
+        linkHref="/story3"
+        coverImg={story3}
+        socials={["instagram", "facebook", "ВКонтакте"]}
+      >
+        <p>
+          Идейные соображения высшего порядка, а также рамки и место обучения
+          кадров обеспечивает широкому кругу (специалистов) участие в
+          формировании новых предложений.
+        </p>
+      </Story>
     </div>
   </Section>
 );
