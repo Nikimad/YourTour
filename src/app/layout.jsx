@@ -1,7 +1,7 @@
-import "@/styles/common.css";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Footer from "@/components/Footer";
+import "@/styles/common.css";
 
 export const metadata = {
   title: "YourTour",
