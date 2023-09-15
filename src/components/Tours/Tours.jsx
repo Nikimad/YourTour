@@ -1,32 +1,38 @@
-import "./Tours.css";
+import tour1 from "@assets/images/card-1.jpg";
+import tour2 from "@assets/images/card-2.jpg";
+import tour3 from "@assets/images/card-3.jpg";
+import tour4 from "@assets/images/card-4.jpg";
+import tour5 from "@assets/images/card-5.jpg";
+import tour6 from "@assets/images/card-6.jpg";
 import Section from "../Section";
 import Tour from "../Tour";
 import ToursHeader from "../ToursHeader";
+import "./Tours.css";
 
 const tours = [
   {
     name: "tour1",
-    cover: "/assets/images/card-1.jpg",
+    cover: tour1,
   },
   {
     name: "tour2",
-    cover: "/assets/images/card-2.jpg",
+    cover: tour2,
   },
   {
     name: "tour3",
-    cover: "/assets/images/card-3.jpg",
+    cover: tour3,
   },
   {
     name: "tour4",
-    cover: "/assets/images/card-4.jpg",
+    cover: tour4,
   },
   {
     name: "tour5",
-    cover: "/assets/images/card-5.jpg",
+    cover: tour5,
   },
   {
     name: "tour6",
-    cover: "/assets/images/card-6.jpg",
+    cover: tour6,
   },
 ];
 
