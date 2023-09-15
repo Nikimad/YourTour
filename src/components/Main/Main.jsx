@@ -1,3 +1,5 @@
+"use client";
+
 import "./Main.css";
 import Tours from "../Tours";
 import Reviews from "../Reviews";

@@ -1,6 +1,6 @@
 import cn from "classnames";
 import "./Navbar.css";
-import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
+import { default as Logo } from "@assets/svg/logo.svg";
 
 const Navbar = ({ isFixed }) => {
   const navbarWrapperClassName = cn("navbar-wrapper", {

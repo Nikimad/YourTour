@@ -1,3 +1,5 @@
+"use client";
+
 import "./Header.css";
 import Navbar from "../Navbar";
 

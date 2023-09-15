@@ -30,7 +30,7 @@
 }
 
 .radio__input:checked + .radio__box {
-    background-image: url('/src/assets/svg/radio.svg');
+    background-image: url('/assets/svg/radio.svg');
     background-size: 60%;
 }
 

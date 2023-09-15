@@ -1,7 +1,7 @@
 import "./Footer.css";
-import { ReactComponent as IGlogo } from "../../assets/svg/instagram.svg";
-import { ReactComponent as FBlogo } from "../../assets/svg/facebook.svg";
-import { ReactComponent as VKlogo } from "../../assets/svg/vk.svg";
+import { default as IGlogo } from "@assets/svg/instagram.svg";
+import { default as FBlogo } from "@assets/svg/facebook.svg";
+import { default as VKlogo } from "@assets/svg/vk.svg";
 
 const Footer = () => (
   <footer className="footer container">

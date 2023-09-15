@@ -1,6 +1,6 @@
 import "./LinkMore.css";
 import cn from "classnames";
-import { ReactComponent as ArrowIcon } from "../../assets/svg/arrow.svg";
+import { default as ArrowIcon } from "@assets/svg/arrow.svg";
 
 const LinkMore = (props) => (
   <a {...props} className={cn("link-more", props.className)}>

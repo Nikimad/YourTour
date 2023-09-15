@@ -1,9 +1,6 @@
 import "./Stories.css";
-import Section from "../Section/Section";
-import Story from "../Story/Story";
-import story1 from "../../assets/images/story-1.jpg";
-import story2 from "../../assets/images/story-2.jpg";
-import story3 from "../../assets/images/story-3.jpg";
+import Section from "../Section";
+import Story from "../Story";
 
 const Stories = () => (
   <Section
@@ -16,7 +13,7 @@ const Stories = () => (
         <Story
           title="Автостопом в Стамбул"
           linkHref="/story1"
-          coverImg={story1}
+          coverImg="/assets/images/story-1.jpg"
           socials={["instagram", "facebook", "YouTube"]}
         >
           <p>
@@ -33,7 +30,7 @@ const Stories = () => (
         <Story
           title="Автостопом в Стамбул"
           linkHref="/story2"
-          coverImg={story2}
+          coverImg="/assets/images/story-2.jpg"
           socials={["instagram", "ВКонтакте"]}
         >
           <p>
@@ -45,7 +42,7 @@ const Stories = () => (
         <Story
           title="Автостопом в Стамбул"
           linkHref="/story3"
-          coverImg={story3}
+          coverImg="/assets/images/story-3.jpg"
           socials={["instagram", "facebook", "ВКонтакте"]}
         >
           <p>

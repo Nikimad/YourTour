@@ -1,8 +1,6 @@
 import "./Reviews.css";
 import Section from "../Section";
 import Review from "../Review";
-import mariaAvatar from "../../assets/images/review-1.jpg";
-import pavelAvatar from "../../assets/images/review-2.jpg";
 import { uniqueId } from "lodash";
 
 const reviews = [
@@ -12,7 +10,7 @@ const reviews = [
       "Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.",
     ],
     tour: "Вдали от дома",
-    authorAvatar: mariaAvatar,
+    authorAvatar: "/assets/images/review-1.jpg",
   },
   {
     authorName: "Павел",
@@ -21,7 +19,7 @@ const reviews = [
       "Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.",
     ],
     tour: "Путешествие в горы ",
-    authorAvatar: pavelAvatar,
+    authorAvatar: "/assets/images/review-2.jpg",
   },
 ];
 
