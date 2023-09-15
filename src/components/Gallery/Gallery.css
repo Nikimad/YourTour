@@ -13,9 +13,12 @@
     margin: 0 auto;
 }
 
+.gallery__img-wrapper {
+    position: relative;
+    height: 110px;
+}
+
 .gallery__img {
-    width: 100%;
-    height: inherit;
     object-fit: cover;
 }
 
@@ -24,7 +27,7 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     gap: 0.625em;
-    height: 110px;
+    width: 100%;
 }
 
 .gallery__img_hide-mob {
@@ -45,8 +48,11 @@
         column-gap: 1em;
     }
 
-    .gallery__row {
+    .gallery__img-wrapper {
         height: 300px;
+    }
+
+    .gallery__row {
         gap: 1em;
     }
 
