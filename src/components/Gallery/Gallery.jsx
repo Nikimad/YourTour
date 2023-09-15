@@ -33,18 +33,18 @@ const Gallery = () => (
             sizes="100%"
           />
         </div>
-        <div className="gallery__img-wrapper">
+        <div className="gallery__img-wrapper gallery__img-wrapper_hide-tab">
           <Image
-            className="gallery__img gallery__img_hide-tab br_main"
+            className="gallery__img br_main"
             src={travel2}
             alt="Кэмпинг в пустыне"
             fill
             sizes="100%"
           />
         </div>
-        <div className="gallery__img-wrapper">
+        <div className="gallery__img-wrapper gallery__img-wrapper_hide-mob">
           <Image
-            className="gallery__img gallery__img_hide-mob  br_main"
+            className="gallery__img br_main"
             src={travel3}
             alt="Горная прогулка"
             fill
@@ -71,18 +71,18 @@ const Gallery = () => (
             sizes="100%"
           />
         </div>
-        <div className="gallery__img-wrapper">
+        <div className="gallery__img-wrapper gallery__img-wrapper_hide-mob">
           <Image
-            className="gallery__img gallery__img_hide-mob br_main"
+            className="gallery__img br_main"
             src={travel6}
             alt="Карта"
             fill
             sizes="100%"
           />
         </div>
-        <div className="gallery__img-wrapper">
+        <div className="gallery__img-wrapper gallery__img-wrapper_hide-tab">
           <Image
-            className="gallery__img gallery__img_hide-tab br_main"
+            className="gallery__img br_main"
             src={travel7}
             alt="Мост в лесу"
             fill
@@ -128,18 +128,18 @@ const Gallery = () => (
             sizes="100%"
           />
         </div>
-        <div className="gallery__img-wrapper">
+        <div className="gallery__img-wrapper gallery__img-wrapper_hide-mob">
           <Image
-            className="gallery__img gallery__img_hide-mob br_main"
+            className="gallery__img br_main"
             src={travel11}
             alt="Оживлённая улица"
             fill
             sizes="100%"
           />
         </div>
-        <div className="gallery__img-wrapper">
+        <div className="gallery__img-wrapper gallery__img-wrapper_hide-tab">
           <Image
-            className="gallery__img gallery__img_hide-tab br_main"
+            className="gallery__img br_main"
             src={travel12}
             alt="Сапсёрфинг"
             fill

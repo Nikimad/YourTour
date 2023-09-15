@@ -30,11 +30,11 @@
     width: 100%;
 }
 
-.gallery__img_hide-mob {
+.gallery__img-wrapper_hide-mob {
     display: none;
 }
 
-.gallery__img_hide-tab {
+.gallery__img-wrapper-tab {
     display: none;
 }
 
@@ -56,7 +56,7 @@
         gap: 1em;
     }
 
-    .gallery__img_hide-mob {
+    .gallery__img-wrapper_hide-mob {
         display: block;
     }
 }
@@ -71,7 +71,7 @@
         gap: 1.5em;
     }
 
-    .gallery__img_hide-tab {
+    .gallery__img-wrapper_hide-tab {
         display: block;
     }
 }
