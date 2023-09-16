@@ -6,16 +6,20 @@ const NavbarContainer = () => {
   const breakPoint = 450;
 
   const handleScroll = useCallback(
-    (e) => {
-      if (!isFixed && e.target.documentElement.scrollTop > breakPoint) {
+    () => {
+      if (!isFixed && window.scrollY > breakPoint) {
         setFixed(true);
       }
-      if (isFixed && e.target.documentElement.scrollTop <= breakPoint) {
+      if (isFixed && window.scrollY <= breakPoint) {
         setFixed(false);
       }
     },
     [isFixed]
   );
+
+  useEffect(() => {
+    handleScroll();
+  }, [handleScroll]);
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
