@@ -114,7 +114,6 @@ const Gallery = () => (
             className="gallery__img br_main"
             src={travel9}
             alt="Старый город"
-            priority
             fill
             sizes="100%"
           />
