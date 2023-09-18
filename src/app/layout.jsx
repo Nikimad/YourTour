@@ -1,7 +1,6 @@
 import { Roboto } from "next/font/google";
 import cn from "classnames";
 import Header from "@/components/Header";
-import Main from "@/components/Main";
 import Footer from "@/components/Footer";
 import "@/styles/common.css";
 
@@ -18,12 +17,12 @@ export const metadata = {
   keywords: "путешествия, туры, походы, сплавы, велопрогулки",
 };
 
-const RootLayout = () => (
+const RootLayout = ({ children }) => (
   <html lang="ru">
     <link rel="icon" href="/assets/favicon/favicon.ico" sizes="any" />
     <body className={cn("body", roboto.className)}>
       <Header />
-      <Main />
+      {children}
       <Footer />
     </body>
   </html>
