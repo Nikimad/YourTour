@@ -1,11 +1,10 @@
 import "./Review.css";
-import { uniqueId } from "lodash";
 
 const Review = ({ authorName, texts, tour, authorAvatar }) => (
   <article className="review bg_beige_200 br_main">
     <div className="review__body">
       {texts.map((text) => (
-        <p key={uniqueId()} className="fs_big">
+        <p key={text} className="fs_big">
           {text}
         </p>
       ))}
@@ -16,7 +15,7 @@ const Review = ({ authorName, texts, tour, authorAvatar }) => (
       <img
         className="review__avatar"
         src={authorAvatar}
-        alt={`${authorName} аватар`}
+        alt={`Фото: ${authorName}`}
       />
     </div>
   </article>

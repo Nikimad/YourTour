@@ -1,30 +1,13 @@
 import "./Input.css";
-import cn from "classnames";
 
-const Input = ({
-  label,
-  name,
-  type,
-  placeholder,
-  className,
-  onChange,
-  value,
-}) => {
-  const inputProps = {
-    name,
-    type,
-    placeholder,
-    className: cn("input", className),
-    onChange,
-    value,
-  };
-
-  return (
-    <label className="label">
-      {label}
-      <input {...inputProps} />
-    </label>
-  );
-};
+const Input = ({ label, className, ...props }) => (
+  <label className="label">
+    {label}
+    <input
+      {...props}
+      className={["input", className].filter(Boolean).join(" ")}
+    />
+  </label>
+);
 
 export default Input;

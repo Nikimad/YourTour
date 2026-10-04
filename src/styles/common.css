@@ -11,7 +11,7 @@ html {
 .body {
     font-size: 16px;
     line-height: 23px;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--ff), sans-serif;
     letter-spacing: 0em;
     background-color: var(--beige-100);
 }
@@ -25,6 +25,8 @@ html {
 .link {
     position: relative;
     color: inherit;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .link::after {
@@ -44,6 +46,18 @@ html {
 
 .link:active {
     color: var(--green-400);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .link:hover::after,
+    .link:focus::after {
+        animation: none;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {

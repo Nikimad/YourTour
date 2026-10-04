@@ -1,10 +1,11 @@
 import "./Form.css";
-import cn from "classnames";
 import Input from "../Input";
 import Textarea from "../Textarea";
 import Select from "../Select";
 import Checkbox from "../Checkbox";
 import Radio from "../Radio";
+
+const today = new Date().toISOString().slice(0, 10);
 
 const Form = ({
   onChange,
@@ -19,6 +20,7 @@ const Form = ({
   comment,
   ageAgreement,
   rulesAgreement,
+  status,
 }) => (
   <form className="form" onSubmit={onSubmit} onReset={onReset}>
     <Input
@@ -26,6 +28,8 @@ const Form = ({
       type="text"
       label="Имя"
       placeholder="Введите Ваше имя"
+      autoComplete="name"
+      required
       onChange={onChange}
       value={name}
     />
@@ -35,6 +39,7 @@ const Form = ({
       colorClass="color_gray_300"
       defaultOption="Куда хотите ехать"
       options={["Китай", "Турция", "Бразилия", "Бельгия", "Грузия"]}
+      required
       onChange={onChange}
       value={destination}
     />
@@ -43,6 +48,8 @@ const Form = ({
       type="email"
       label="Email"
       placeholder="example@mail.com"
+      autoComplete="email"
+      required
       onChange={onChange}
       value={email}
     />
@@ -50,7 +57,10 @@ const Form = ({
       name="tel"
       type="tel"
       label="Телефон"
-      placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+      placeholder="+7 (900) 000-00-00"
+      autoComplete="tel"
+      inputMode="tel"
+      required
       onChange={onChange}
       value={tel}
     />
@@ -58,25 +68,29 @@ const Form = ({
       name="dateFrom"
       type="date"
       label="Дата от"
+      min={today}
+      required
       onChange={onChange}
       value={dateFrom}
     />
     <Input
       name="dateTo"
       type="date"
-      label="Дата от"
+      label="Дата до"
+      min={dateFrom || today}
+      required
       onChange={onChange}
       value={dateTo}
     />
     <Textarea
       name="comment"
       label="Комментарий"
-      labelClassName={cn("form__field_fullwidth")}
-      textareaClassName={cn("form__textarea")}
+      labelClassName="form__field_fullwidth"
+      textareaClassName="form__textarea"
       onChange={onChange}
       value={comment}
     />
-    <fieldset className={cn("form__fieldset", "form__field_fullwidth")}>
+    <fieldset className="form__fieldset form__field_fullwidth">
       <legend className="form__fieldset__legend">Вам есть 18 лет?</legend>
       <Radio
         name="ageAgreement"
@@ -97,10 +111,11 @@ const Form = ({
     </fieldset>
     <Checkbox
       name="rulesAgreement"
-      labelClassName={cn("form__field_fullwidth")}
+      labelClassName="form__field_fullwidth"
       onChange={onChange}
-      value={rulesAgreement === "yes" ? "no" : "yes"}
+      value="yes"
       checked={rulesAgreement === "yes"}
+      required
     >
       <span className="form__span color_gray_300">
         Нажимая кнопку, я принимаю условия{" "}
@@ -109,27 +124,23 @@ const Form = ({
         Лицензионного Договора
       </a>
     </Checkbox>
-    <fieldset
-      className={cn(
-        "form__fieldset",
-        "form__controls",
-        "form__field_fullwidth"
-      )}
-    >
-      <legend className="visually-hidden">Элементы котроля формы</legend>
-      <Input
-        name="submit"
-        type="submit"
-        value="Найти тур"
-        className={cn("form__button", "form__button-submit")}
-      />
-      <Input
-        name="reset"
-        type="reset"
-        value="Сбросить"
-        className={cn("form__button", "form__button-reset")}
-      />
+    <fieldset className="form__fieldset form__controls form__field_fullwidth">
+      <legend className="visually-hidden">Управление формой</legend>
+      <button type="submit" className="input form__button form__button-submit">
+        Найти тур
+      </button>
+      <button type="reset" className="input form__button form__button-reset">
+        Сбросить
+      </button>
     </fieldset>
+    <p
+      className="form__status form__field_fullwidth"
+      role="status"
+      aria-live="polite"
+    >
+      {status === "success" &&
+        "Спасибо! Заявка принята, мы свяжемся с вами по указанным контактам."}
+    </p>
   </form>
 );
 

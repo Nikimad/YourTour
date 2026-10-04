@@ -10,6 +10,10 @@
     color: var(--white);
 }
 
+.link-more__icon {
+    content: url('../../assets/svg/arrow.svg');
+}
+
 .link-more::after {
     box-sizing: unset;
     position: absolute;
@@ -29,16 +33,15 @@
     background-color: var(--green-400);
 }
 
-.link-more:active::after  {
-     background-color: var(--orange-200)
+.link-more:active::after {
+    background-color: var(--orange-200)
 }
-
 
 .link-more-container:hover .link-more::after,
 .link-more-container:focus .link-more::after {
     background-color: var(--green-400);
 }
 
-.link-more-container .link-more:active::after  {
+.link-more-container .link-more:active::after {
     background-color: var(--orange-200);
 }

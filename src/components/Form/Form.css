@@ -8,6 +8,11 @@
     border-radius: 30px;
 }
 
+.form__status {
+  min-height: 1.5em;
+  margin: 0;
+}
+
 .form__textarea {
     resize: none;
     height: 8.25em;

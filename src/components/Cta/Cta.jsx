@@ -7,19 +7,19 @@ const Cta = () => (
     <div className="cta">
       <img src={ctaImg} className="cta__img" alt="Долина с домом у озера" />
       <div className="cta__body">
-        <h3 className="h3 cta__heading">
+        <h2 className="h3 cta__heading">
           Пора в путешествие
           <br />
           вместе с нами!
-        </h3>
+        </h2>
         <p>
           <span className="color_gray_300">
             Напиши на почту и узнай подробности
             <br />
             на{" "}
           </span>
-          <a className="link color_black" href="mailto: yourtour@gmail.com">
-            yourtour@gmail.com
+          <a className="link color_black" href="mailto:yourtour@example.com">
+            yourtour@example.com
           </a>
         </p>
       </div>

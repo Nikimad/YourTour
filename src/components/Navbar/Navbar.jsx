@@ -1,12 +1,10 @@
-import cn from "classnames";
 import "./Navbar.css";
-import { ReactComponent as Logo } from "../../assets/svg/logo.svg";
+import Logo from '../../icons/Logo';
 
 const Navbar = ({ isFixed }) => {
-  const navbarWrapperClassName = cn("navbar-wrapper", {
-    "navbar-wrapper_fixed": isFixed,
-    "navbar-wrapper_colored": isFixed,
-  });
+  const navbarWrapperClassName = isFixed
+    ? "navbar-wrapper navbar-wrapper_fixed navbar-wrapper_colored"
+    : "navbar-wrapper";
 
   return (
     <div className={navbarWrapperClassName}>
@@ -26,7 +24,7 @@ const Navbar = ({ isFixed }) => {
             Истории
           </a>
         </nav>
-        <a className="link navbar__link" href="tel: +79999999999">
+        <a className="link navbar__link" href="tel:+79999999999">
           +7 999 999 99 99
         </a>
       </div>

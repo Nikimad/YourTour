@@ -14,81 +14,50 @@ import travel11 from "../../assets/images/travel-11.jpg";
 import travel12 from "../../assets/images/travel-12.jpg";
 import travel13 from "../../assets/images/travel-13.jpg";
 
+const rows = [
+  [
+    { src: travel1, alt: "Самолёт над заливом" },
+    { src: travel2, alt: "Кемпинг в пустыне", hide: "tab" },
+    { src: travel3, alt: "Горная прогулка", hide: "mob" },
+    { src: travel4, alt: "Пустая дорога" },
+  ],
+  [
+    { src: travel5, alt: "Скалы у моря" },
+    { src: travel6, alt: "Карта", hide: "mob" },
+    { src: travel7, alt: "Мост в лесу", hide: "tab" },
+    { src: travel8, alt: "Кемпинг" },
+    { src: travel13, alt: "Узкие улицы" },
+  ],
+  [
+    { src: travel9, alt: "Старый город" },
+    { src: travel10, alt: "Озеро в горах" },
+    { src: travel11, alt: "Оживлённая улица", hide: "mob" },
+    { src: travel12, alt: "SUP-серфинг", hide: "tab" },
+  ],
+];
+
 const Gallery = () => (
   <Section
     id="gallery"
     title="Фотографии путешествий"
-    subtitle="Идейные соображения высшего порядка, а также рамки и место обучения кадров"
-    className='gallery-section'
+    subtitle="Моменты из наших поездок: от горных озёр до узких улочек старых городов"
+    className="gallery-section"
   >
     <div className="gallery">
-      <div className="gallery__row">
-        <img
-          className="gallery__img br_main"
-          src={travel1}
-          alt="Самолёт над заливом"
-        />
-        <img
-          className="gallery__img gallery__img_hide-tab br_main"
-          src={travel2}
-          alt="Кэмпинг в пустыне"
-        />
-        <img
-          className="gallery__img gallery__img_hide-mob  br_main"
-          src={travel3}
-          alt="Горная прогулка"
-        />
-        <img
-          className="gallery__img br_main"
-          src={travel4}
-          alt="Пустая дорога"
-        />
-      </div>
-      <div className="gallery__row">
-        <img
-          className="gallery__img br_main"
-          src={travel5}
-          alt="Скалы у моря"
-        />
-        <img
-          className="gallery__img gallery__img_hide-mob br_main"
-          src={travel6}
-          alt="Карта"
-        />
-        <img
-          className="gallery__img gallery__img_hide-tab br_main"
-          src={travel7}
-          alt="Мост в лесу"
-        />
-        <img className="gallery__img br_main" src={travel8} alt="Кэмпинг" />
-        <img
-          className="gallery__img br_main"
-          src={travel13}
-          alt="Узкие улицы"
-        />
-      </div>
-      <div className="gallery__row">
-        <img
-          className="gallery__img br_main"
-          src={travel9}
-          alt="Старый город"
-        />
-        <img
-          className="gallery__img br_main"
-          src={travel10}
-          alt="Озеро в горах"
-        />
-        <img
-          className="gallery__img gallery__img_hide-mob br_main"
-          src={travel11}
-          alt="Оживлённая улица"
-        />
-        <img
-          className="gallery__img gallery__img_hide-tab br_main"
-          src={travel12}
-          alt="Сапсёрфинг"
-        />
-      </div>
+      {rows.map((row, i) => (
+        <div className="gallery__row" key={i}>
+          {row.map(({ src, alt, hide }) => (
+            <img
+              key={src}
+              className={`gallery__img br_main${hide ? ` gallery__img_hide-${hide}` : ""}`}
+              src={src}
+              alt={alt}
+              loading="lazy"
+              decoding="async"
+            />
+          ))}
+        </div>
+      ))}
     </div>
   </Section>
 );

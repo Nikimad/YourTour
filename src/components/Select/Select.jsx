@@ -1,6 +1,4 @@
 import "./Select.css";
-import cn from "classnames";
-import { uniqueId } from "lodash";
 
 const Select = ({
   label,
@@ -11,24 +9,27 @@ const Select = ({
   className,
   colorClass,
   onChange,
+  required,
 }) => {
   const selectProps = {
-    label,
     value,
     name,
     onChange,
-    className: cn("input", "select", className, { [colorClass]: value === "" }),
+    required,
+    className: ["input", "select", className, value === "" && colorClass]
+      .filter(Boolean)
+      .join(" "),
   };
 
   return (
-    <label className={"label"}>
+    <label className="label">
       {label}
       <select {...selectProps}>
-        <option value={defaultOption} hidden>
+        <option value="" hidden>
           {defaultOption}
         </option>
         {options.map((item) => (
-          <option className="color_black" key={uniqueId()} value={item}>
+          <option className="color_black" key={item} value={item}>
             {item}
           </option>
         ))}

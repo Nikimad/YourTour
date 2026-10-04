@@ -1,1 +1,1 @@
-export { default } from "./ToursHeaderContainer";
+export { default } from "./ToursHeader";

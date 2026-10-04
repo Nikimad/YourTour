@@ -22,14 +22,14 @@
 }
 
 .story__footer {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.story___socials {
-    display: none;
+.story__logo {
+   display: none;
+   fill: #fff;
+   width: 100px;
 }
 
 .story .link:active {
@@ -50,9 +50,7 @@
         gap: 1.85em;
     }
 
-    .story___socials {
-        display: grid;
-        grid-auto-flow: column;
-        gap: 35px;
+    .story__logo {
+        display: block;
     }
 }

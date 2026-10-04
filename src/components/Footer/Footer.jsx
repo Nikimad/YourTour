@@ -1,30 +1,22 @@
 import "./Footer.css";
-import { ReactComponent as IGlogo } from "../../assets/svg/instagram.svg";
-import { ReactComponent as FBlogo } from "../../assets/svg/facebook.svg";
-import { ReactComponent as VKlogo } from "../../assets/svg/vk.svg";
+
+const socials = [
+  { label: "telegram", href: "https://t.me/yourtour" },
+  { label: "vkontakte", href: "https://vk.com/yourtour" },
+  { label: "instagram", href: "https://www.instagram.com/yourtour/" },
+];
 
 const Footer = () => (
   <footer className="footer container">
     <p className="footer__text color_gray_300">Наши социальные сети</p>
     <ul className="footer__socials">
-      <li className="footer__socials__item">
-        <IGlogo />
-        <a className="link" href="https://www.instagram.com/snp.agency/">
-          instagram
-        </a>
-      </li>
-      <li className="footer__socials__item">
-        <FBlogo />
-        <a className="link" href="http://snp.agency">
-          facebook
-        </a>
-      </li>
-      <li className="footer__socials__item">
-        <VKlogo />
-        <a className="link" href="https://vk.com/snp.agency">
-          vkontakte
-        </a>
-      </li>
+      {socials.map(({ label, href }) => (
+        <li key={label} className="footer__socials__item">
+          <a className="link" href={href} target="_blank" rel="noopener noreferrer">
+            {label}
+          </a>
+        </li>
+      ))}
     </ul>
   </footer>
 );

@@ -11,9 +11,4 @@ const Tour = ({ title, price, linkHref, coverImg }) => (
   </article>
 );
 
-Tour.defaultProps = {
-  title: `Путешествие в горы`,
-  price: "от 80 000 руб",
-};
-
 export default Tour;

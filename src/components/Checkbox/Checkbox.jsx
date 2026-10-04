@@ -1,5 +1,4 @@
 import "./Checkbox.css";
-import cn from "classnames";
 
 const Checkbox = ({
   name,
@@ -8,24 +7,22 @@ const Checkbox = ({
   onChange,
   value,
   checked,
+  required,
   children,
-}) => {
-  const inputProps = {
-    name,
-    onChange,
-    value,
-    type: "checkbox",
-    className: cn("check__input", "visually-hidden"),
-    checked,
-  };
-
-  return (
-    <label className={cn("check", labelClassName)}>
-      <input {...inputProps} />
-      <span className={cn("check__box", boxClassName)} />
-      <span className="check__span">{children}</span>
-    </label>
-  );
-};
+}) => (
+  <label className={["check", labelClassName].filter(Boolean).join(" ")}>
+    <input
+      name={name}
+      onChange={onChange}
+      value={value}
+      type="checkbox"
+      className="check__input"
+      checked={checked}
+      required={required}
+    />
+    <span className={["check__box", boxClassName].filter(Boolean).join(" ")} />
+    <span className="check__span">{children}</span>
+  </label>
+);
 
 export default Checkbox;

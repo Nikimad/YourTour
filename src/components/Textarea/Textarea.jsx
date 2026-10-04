@@ -1,5 +1,3 @@
-import cn from "classnames";
-
 const Textarea = ({
   label,
   labelClassName,
@@ -10,13 +8,13 @@ const Textarea = ({
 }) => {
   const textareaProps = {
     name,
-    className: cn("input", textareaClassName),
+    className: ["input", textareaClassName].filter(Boolean).join(" "),
     onChange,
     value,
   };
 
   return (
-    <label className={cn("label", labelClassName)}>
+    <label className={["label", labelClassName].filter(Boolean).join(" ")}>
       {label}
       <textarea {...textareaProps} />
     </label>
